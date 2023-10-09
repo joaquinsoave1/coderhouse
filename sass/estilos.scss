@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+@import "partials/index";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/queri";

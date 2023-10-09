@@ -1,0 +1,9 @@
+footer{
+    background-color: #DEE23B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .suscribete,.contactanos,.nuestrasredes{
+        padding: 1.5rem;
+    }
+}
