@@ -1,28 +1,9 @@
 @media (max-width:950px){
     /* -------------------------------HEADER------------------------------- */
-    
     header{
         display: flex;
         justify-content: center;
     }
-    nav{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        background-color: gray;
-        padding: 2rem; 
-    }
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    .nav-list{
-        flex-direction: column;
-        gap: 2rem;
-    }
- 
     .bolsayperfil{
         padding-right: 25px;
         position: absolute;
@@ -140,8 +121,6 @@
         padding-right: 100px;
         height: 300px;
     }
-    body{
-        border: 1px solid red;
-    }
+    
 }
 
