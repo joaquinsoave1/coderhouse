@@ -1,8 +1,6 @@
 @media (max-width:950px){
     /* -------------------------------HEADER------------------------------- */
-    .abrir-menu{
-        display: block;
-    }
+    
     header{
         display: flex;
         justify-content: center;
@@ -55,20 +53,11 @@
         }
         /*------------------------------- TRES OFERTAS -------------------------------*/
         .tresofertas{
-            background-color: #DEE23B;
-            width: 100%;
-            height: 250px;
-            display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-                .loguitos{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 2.5rem;
-                    img{
-                        width: 80px;
-                    }
+            height: 650px;
+                .loguitos img{
+                    width: 80px;
+                    height: 80px;
                 }
         }
         .nuestrosfavoritos{
@@ -95,7 +84,7 @@
                 }
                 .img{
                     width: 100px;
-                    height: 50px;
+                    height: 30px;
                     position: relative;
                     left: 12px;
                 }
@@ -108,7 +97,7 @@
                     font-family: 'Poppins', sans-serif;
                     position: relative;
                     left: 1px;
-                    top: 70px;
+                    top: 0px;
                 }
             }
         }
@@ -122,11 +111,37 @@
         .suscribete,.contactanos,.nuestrasredes{
             padding: 1.5rem;
         }
-        
     }
+    /*-------------------------------CONTACTO-------------------------------*/
+    .maincs{
+        flex-direction: column;
+    }
+   /* ---------------------- */
+    .preguntas{
+        font-size: 19px;
+    }
+    /* -----------CONTACTO----------- */
+    .form{
+        width: 90%;
+    }
+    
 }
 
-
-/*------------------------------- MEDIA -------------------------------*/
-
+@media (max-width:390px){
+    .sobrenosotros{
+        width: 350px;
+    }
+    /* ------------------ */
+    .form{
+        width: 80%;
+    }
+    iframe{
+        width: 300px;
+        padding-right: 100px;
+        height: 300px;
+    }
+    body{
+        border: 1px solid red;
+    }
+}
 

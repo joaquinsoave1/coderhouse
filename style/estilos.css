@@ -86,6 +86,16 @@ main .nuestrosfav .card .verdetalles {
   top: 0px;
 }
 
+.mainsn {
+  display: flex;
+  padding: 2.5rem;
+  align-items: center;
+}
+.mainsn .sobrenosotros {
+  width: 650px;
+  font-size: 22px;
+}
+
 header {
   height: 100%;
   min-height: 90px;
@@ -100,7 +110,7 @@ header {
   height: 80px;
 }
 
-.nav-list {
+nav {
   display: flex;
   text-decoration: none;
   font-size: 18px;
@@ -119,11 +129,117 @@ footer .suscribete, footer .contactanos, footer .nuestrasredes {
   padding: 1.5rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .nuestrosfavoritos {
+  padding: 2.5rem;
+}
+main .nuestrosfav {
+  display: flex;
+  align-items: center;
+}
+main .nuestrosfav .card {
+  box-shadow: 1px 1px 1px 1px grey;
+  border-radius: 10px;
+  width: 330px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 18px;
+}
+main .nuestrosfav .card .h3 {
+  position: relative;
+  left: 12px;
+  bottom: 18px;
+  font-size: 16px;
+}
+main .nuestrosfav .card .img {
+  width: 150px;
+  height: 20px;
+  position: relative;
+  left: 12px;
+}
+main .nuestrosfav .card .verdetalles {
+  background-color: #DEE23B;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 6px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  left: 1px;
+  top: 0px;
+}
+
+.maincs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.maincsh2 {
+  font-size: 20px;
+}
+
+iframe {
+  width: 600px;
+  padding-left: 120px;
+}
+
+.contactanosmain {
+  display: flex;
+  display: block;
+  font-size: 1.5em;
+}
+.contactanosmain img {
+  width: 8%;
+  height: 1%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+  font-size: 25px;
+  width: 35%;
+  padding-bottom: 55px;
+}
+.form input {
+  background-color: lightgray;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+#dejanostumensaje {
+  height: 200px;
+}
+
+.preguntas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  font-size: 25px;
+}
+
+.preguntauno {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 950px) {
   /* -------------------------------HEADER------------------------------- */
-  .abrir-menu {
-    display: block;
-  }
   header {
     display: flex;
     justify-content: center;
@@ -175,21 +291,12 @@ footer .suscribete, footer .contactanos, footer .nuestrasredes {
     text-align: center;
   }
   main .tresofertas {
-    background-color: #DEE23B;
-    width: 100%;
-    height: 250px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-  }
-  main .tresofertas .loguitos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.5rem;
+    height: 650px;
   }
   main .tresofertas .loguitos img {
     width: 80px;
+    height: 80px;
   }
   main .nuestrosfavoritos {
     padding: 3rem;
@@ -217,7 +324,7 @@ footer .suscribete, footer .contactanos, footer .nuestrasredes {
   }
   main .nuestrosfav .card .img {
     width: 100px;
-    height: 50px;
+    height: 30px;
     position: relative;
     left: 12px;
   }
@@ -230,7 +337,7 @@ footer .suscribete, footer .contactanos, footer .nuestrasredes {
     font-family: "Poppins", sans-serif;
     position: relative;
     left: 1px;
-    top: 70px;
+    top: 0px;
   }
   /* -------------------------------FOOTER------------------------------- */
   footer {
@@ -242,7 +349,35 @@ footer .suscribete, footer .contactanos, footer .nuestrasredes {
   footer .suscribete, footer .contactanos, footer .nuestrasredes {
     padding: 1.5rem;
   }
+  /*-------------------------------CONTACTO-------------------------------*/
+  .maincs {
+    flex-direction: column;
+  }
+  /* ---------------------- */
+  .preguntas {
+    font-size: 19px;
+  }
+  /* -----------CONTACTO----------- */
+  .form {
+    width: 90%;
+  }
 }
-/*------------------------------- MEDIA -------------------------------*/
+@media (max-width: 390px) {
+  .sobrenosotros {
+    width: 350px;
+  }
+  /* ------------------ */
+  .form {
+    width: 80%;
+  }
+  iframe {
+    width: 300px;
+    padding-right: 100px;
+    height: 300px;
+  }
+  body {
+    border: 1px solid red;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
